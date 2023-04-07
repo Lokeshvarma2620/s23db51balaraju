@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 #{title}
+  p Loves to watch CSK matches all day <br>
+  button(type="button" class="btn btn-warning", onClick="reduce()") Press Me
+
+  div(id="reduce") REDUCE THE VALUE 
+  a(href="deodorant") Link 
+  script.
+    let count=20;
+    let change = -1;
+    function reduce (){
+      count = count+change;
+      change = change--;
+      console.log(count,change,"REDUCE function output");
+      document.getElementById('reduce').innerHTML = "Count is "+count+ " Change is "+change ;
+    }
