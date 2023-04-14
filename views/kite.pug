@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1= title
-  - var results = [{"kite_colour":"Red","kite_shape" :"vertical","kite_cost":"$10"},{"kite_colour":"pink","kite_shape":"vertical","kite_cost" :"$15"},{"kite_colour":"orange","kite_shape":"orange","kite_cost" :"$14"}]
+  - var results = [{"kite_colour":"Red","kite_shape" :"vertical","kite_cost":"$10"},{"kite_colour":"blue","kite_shape":"horizontal","kite_cost" :"$20"},{"kite_colour":"orange","kite_shape":"horizontal","kite_cost" :"$30"},{"kite_colour":"white","kite_shape":"vertical","kite_cost" :"$60"}]
   div.container-fluid
       div.row
           each item,index in results
