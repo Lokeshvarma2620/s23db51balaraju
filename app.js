@@ -48,7 +48,7 @@ async function recreateDB(){
  await kite.deleteMany();
  let instance1 = new
 
- kite({kite_color:"red",kite_shape:"vertical",kite_cost:10});
+ kite({kite_color:"yellow",kite_shape:"vertical",kite_cost:10});
 
  instance1.save().then( () => {
 
@@ -61,7 +61,7 @@ async function recreateDB(){
  });
  let instance2 = new
 
- kite({kite_color:"blue",kite_shape:"horizontal",kite_cost:20});
+ kite({kite_color:"black",kite_shape:"horizontal",kite_cost:20});
 
  instance2.save().then( () => {
 
@@ -74,7 +74,7 @@ async function recreateDB(){
  });
  let instance3 = new
 
- kite({kite_color:"orange",kite_shape:"horizontal",kite_cost:30});
+ kite({kite_color:"pink",kite_shape:"horizontal",kite_cost:30});
 
  instance3.save().then( () => {
 

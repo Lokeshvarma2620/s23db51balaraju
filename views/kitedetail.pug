@@ -1,0 +1,20 @@
+extends layout
+block content
+    h1= title
+    - let kiteid = toShow._id
+    - let kite_color = toShow.kite_color
+    - let kite_shape = toShow.kite_shape
+    - let kite_cost = toShow.kite_cost
+    div
+            div.row
+                div(class='kiteAttr mr-3') kite ID is:
+                div #{kiteid}
+            div.row(id="kiteAttr")
+                div(class="kiteAttr mr-3") kite color is:
+                div #{kite_color}
+            div.row
+                div(class="kiteAttr mr-3") kite shape is:
+                div #{kite_shape}
+            div.row
+                div(class="kiteAttr mr-3") kite cost is:
+                div #{kite_cost}

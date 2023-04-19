@@ -2,11 +2,11 @@ extends layout
 
 block content
   h1= title
-  - var items = results
+  - var results = [{"kite_color":"yellow","kite_shape":"vertical","kite_cost":"$20"},{"kite_color":"red","kite_shape":"vertical","kite_cost":"$10"},{"kite_color":"blue","kite_shape":"horizontal","kite_cost":"$15"}]
   div.container-fluid
       div.row
           each item,index in items
-               div.col-sm-2(onclick=`buy(${index})`) kite colour: #{item["kite_colour"]} <br> kite shape: #{item["kite_shape"]} <br> kite cost: #{item["kite_cost"]}
+               div.col-sm-2(onclick=`buy(${index})`)<br> kite color: #{item["kite_color"]} <br> kite shape: #{item["kite_shape"]} <br> kite cost: #{item["kite_cost"]}
       script.
           function buy(index) {
           alert("You Purchased item "+index);
